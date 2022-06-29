@@ -2,22 +2,20 @@
 <html>
     <head>
         <title>Васильев Лаба 3</title>
-        <link rel="stylesheet" href="/css/main_css">
+        <link rel="stylesheet" href="/css/main_css.css">
+        <script src="/js/db.js"></script>
     </head>
     <body>
         <header>
             <h1>Вариант 2</h1>
-            <button class="open-button" onclick="openForm()">Открыть форму</button>
         </header>
-        <main class="form" id="myForm">
-            <form action="#" class="form-container">
-                <h1>Форма</h1>
-                <label>Имя<span>*</span>: <input type="name" name="name" placeholder="введите имя" required></label>
-                <label>Телефон:<span>*</span>: <input type="tel" name="phone" placeholder="введите телефон" required></label>
-            </form>
-                <button type="button" class="btn" onclick="submit()">Отправить</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-        </main>
+        <form method="post">
+            <label>Имя</label><br>
+            <input type="text" name="userName" /><br><br>
+            <label>Возраст</label><br>
+            <input type="number" name="userAge" /><br><br>
+            <input type="submit" value="Отправить" />
+        </form>
         <footer>
             <p>Васильев М.И. 201-324</p>
         </footer>
